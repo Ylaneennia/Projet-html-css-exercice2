@@ -1,22 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Raleway", Arial, sans-serif
-}
-
-header {
-    background-color: #27242b;
-    padding: 0% 15%;
-    margin: 0%;
-    border-bottom: solid 2px #322f36;
-}
-
-.logo1 {
-    width: 100%;
-}
-
-.content1 {
-    background-color: #27242b;
-    padding-top: 5%;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Raleway", Arial, sans-serif
+    }
+    
+    header {
+        padding: 0% 15%;
+        margin: 0%;
+        background-color: #27242b;
+        border-bottom: solid 2px #322f36;
+    }
+    
+    .logo1 {
+        width: 100%;
+    }
+    
+    .content1 {
+        padding-top: 5%;
+        background-color: #27242b;
+    }
+    
+    @media screen and (max-device-width: 400px) {
+        header a {
+            display: none;
+        }
+        .logo1 {
+            width: 100%;
+        }
+        h1 {
+            font-size: large;
+        }
+        h5 {
+            font-size: x-small;
+        }
+        .content1>div>p {
+            font-size: x-small;
+        }
+        .content1>div>button {
+            font-size: x-small;
+        }
+        .content1 {
+            height: 50vh;
+        }
+        .content2>div>figure>img {
+            width: 100%;
+        }
+        h3 {
+            font-size: larger;
+        }
+        h3+p {
+            font-size: x-small;
+        }
+        .content3 div .row div {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+        }
+        .icon-right {
+            text-align: center;
+            display: flex;
+            justify-content: center !important;
+            flex-direction: row-reverse !important;
+            width: auto;
+        }
+        .icon-right img {
+            width: 5vh !important;
+        }
+        .icon-right+p {
+            padding: 0%;
+            text-align: center;
+        }
+        .icon-left {
+            text-align: center;
+            display: flex;
+            justify-content: center !important;
+        }
+        .icon-left+p {
+            padding: 0%;
+            text-align: center;
+        }
+        .part1 {
+            width: auto;
+        }
+        .content4 img {
+            width: 30%;
+        }
+        .content4 p {
+            font-size: x-small;
+        }
+        .content5 figure img {
+            width: 150%;
+        }
+        .content5 h3 {
+            text-align: center !important;
+        }
+        .screen figcaption {
+            text-align: center !important;
+        }
+        .content6 {
+            display: block;
+        }
+    }
